@@ -29,7 +29,7 @@ function buildDistanceMatrix(distArray) {
 const distanceMatrix = buildDistanceMatrix(distanceToHengshui);
 
 const CONFIG = {
-    BASE_PRICE: 0.46,
+    BASE_PRICE: 0.34,
     CLASS_RATIO: {
         '二等座': 1.0,
         '一等座': 1.6,
