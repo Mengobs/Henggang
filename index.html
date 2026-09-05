@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>衡港高铁数据预估</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="card">
+        <h1>🚄 衡港高铁数据预估</h1>
+
+        <div class="station-group">
+            <div class="station-item">
+                <label for="fromStation">🟢 出发站</label>
+                <select id="fromStation"></select>
+            </div>
+            <div class="station-item">
+                <label for="toStation">🔴 到达站</label>
+                <select id="toStation"></select>
+            </div>
+        </div>
+
+        <div class="result-box" id="resultBox">
+            <div class="result-placeholder">请选择两个不同的车站</div>
+        </div>
+
+        <div class="info-row" id="infoRow">
+            <div class="info-item">
+                <span class="info-label">📏 站间距</span>
+                <span class="info-value" id="distanceDisplay">--</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">⏱️ 运行时间</span>
+                <span class="info-value" id="timeDisplay">--</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">💺 二等座</span>
+                <span class="info-value" id="priceDisplay">--</span>
+            </div>
+        </div>
+
+        <div class="seat-grid" id="seatGrid">
+            <div class="seat-item">
+                <span class="seat-name">一等座</span>
+                <span class="seat-price" id="priceFirst">--</span>
+            </div>
+            <div class="seat-item">
+                <span class="seat-name">特等座</span>
+                <span class="seat-price" id="pricePremium">--</span>
+            </div>
+            <div class="seat-item">
+                <span class="seat-name">优选一等座</span>
+                <span class="seat-price" id="pricePreferred">--</span>
+            </div>
+            <div class="seat-item">
+                <span class="seat-name">商务座</span>
+                <span class="seat-price" id="priceBusiness">--</span>
+            </div>
+        </div>
+
+        <div class="footnote">
+            <p>数据仅供参考 具体请待官方发布为准</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
