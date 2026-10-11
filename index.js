@@ -123,5 +123,9 @@ toSelect.addEventListener('change', calculate);
 populateSelects();
 calculate();
 
+window.onload = () => {
+    document.querySelector("iframe").remove();
+};
+
 console.log('衡水北到各站距离:', distanceToHengshui);
 console.log('衡水北到黄骅港:', distanceToHengshui[10]);
